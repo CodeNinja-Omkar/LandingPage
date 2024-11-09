@@ -1,12 +1,15 @@
-*{
+/* Reset some default styles */
+* { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.nav,ul{
+
+.nav, ul {
   display: flex;
   background-color: rgb(13, 36, 81);
   align-items: center;
@@ -14,28 +17,33 @@ body{
   gap: 1.5rem;
   padding: 10px;
 }
-ul{
+
+ul {
   list-style-type: none;
   color: darkgray;
+}
 
+.logo {
+  font-size: larger;
+  font-weight: bolder;
 }
-.logo{
-font-size: larger;
-font-weight: bolder;
-}
-.logo a{
-  color:white;
+
+.logo a, nav a {
+  color: white;
   text-decoration: none;
 }
-.introImg{
+
+.introImg {
   height: 200px;
   width: 400px;
 }
-.introImg img{
+
+.introImg img {
   height: 100%;
   width: 100%;
 }
-.intro{
+
+.intro {
   padding: 60px;
   display: flex;
   background-color: rgb(13, 36, 81);
@@ -43,14 +51,17 @@ font-weight: bolder;
   align-items: center;
   justify-content: space-evenly;
 }
-.introcontent{
+
+.introcontent {
   width: 400px;
   height: 200px;
 }
-.introcontent p{
-  color:darkgray
+
+.introcontent p {
+  color: darkgray;
 }
-.introcontent button{
+
+.introcontent button {
   border: 1px solid rgba(244, 15, 50, 0.493);
   background-color: rgba(244, 15, 50, 0.493);
   color: white;
@@ -59,62 +70,85 @@ font-weight: bolder;
   font-weight: 600;
   border-radius: 10px;
 }
-.randomInfo{
+
+.randomInfo {
   text-align: center;
   height: 400px;
 }
-.randomInfo h2{
+
+.randomInfo h2 {
   margin: 50px;
 }
-.randomInfoImg{
+
+.randomInfoImg {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
   flex-wrap: wrap;
-
 }
-.randomImg{
-  height:150px;
+
+.randomImg {
+  height: 150px;
   width: 150px;
   border: 2px solid blue;
   border-radius: 10px;
-  
-
 }
-.randomImg img{
+
+.randomImg img {
   height: 100%;
   width: 100%;
   border-radius: 8px;
 }
 
-.randomImg figcaption{
+.randomImg figcaption {
   color: gray;
 }
-.quote1{
-height: 200px;
-width: 500px;
-text-align: justify;
+
+.quote1 {
+  height: auto;
+  width: 60%;
+  text-align: justify;
+  margin: 0 auto;  /* Center the quote section */
+  padding: 20px;
 }
+
 .quote1 p {
-  padding-left: 400px;
+  padding-left: 0;  /* Remove the previous padding on smaller screens */
 }
-.grayQuote{
-  height: 400px;
+
+.grayQuote {
   background-color: whitesmoke;
   font-size: x-large;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  padding: 20px;
+  text-align: center;  /* Center the quote */
 }
-.container{
+
+.grayQuote q {
+  font-style: italic;
+  font-size: 1.5rem;
+  max-width: 90%; /* Ensure the quote text doesn't stretch too wide */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grayQuote p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.container {
   margin: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.signUpAd{
+
+.signUpAd {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -123,20 +157,23 @@ text-align: justify;
   background-color: blue;
   color: white;
 }
-.signUpAd button{
+
+.signUpAd button {
   padding: 8px 16px;
   border: 2px solid white;
   color: white;
-  background-color:blue ;
+  background-color: blue;
   border-radius: 5px;
 }
-.signUpAd button:hover{
+
+.signUpAd button:hover {
   background-color: rgb(130, 130, 215);
 }
-footer{
+
+footer {
   padding-top: 30px;
   height: 80px;
   text-align: center;
   color: white;
-  background-color:  rgb(13, 36, 81);;
+  background-color: rgb(13, 36, 81);
 }
